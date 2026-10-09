@@ -1,0 +1,104 @@
+:root {
+  --roxo: #7c3aed;
+  --roxo-claro: #f1edff;
+  --texto: #1c1830;
+  --cinza: #6b7280;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  color: var(--texto);
+  background: var(--roxo-claro);
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+}
+
+.auth-card .sub { color: var(--cinza); margin-bottom: 24px; }
+
+label { display: block; margin: 16px 0 6px; font-weight: 500; }
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd6fe;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--roxo);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.erro { color: #dc2626; margin-top: 8px; min-height: 1.2em; }
+.rodape { margin-top: 20px; text-align: center; color: var(--cinza); }
+.rodape a { color: var(--roxo); text-decoration: none; }
+
+.layout { display: flex; min-height: 100vh; }
+
+.sidebar {
+  width: 240px;
+  background: #fff;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo { color: var(--roxo); }
+
+.sidebar nav { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+
+.sidebar nav a {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.sidebar nav a.ativo { background: var(--roxo); color: #fff; }
+
+.btn-sair {
+  padding: 10px;
+  border: 1px solid #ddd6fe;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.conteudo { flex: 1; padding: 32px; }
+.conteudo .sub { color: var(--cinza); margin-bottom: 24px; }
+
+.cards { display: flex; gap: 16px; }
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 160px;
+}
+
+.card span { display: block; font-size: 2rem; font-weight: 700; color: var(--roxo); }
+

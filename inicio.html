@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AvisAí - Início</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2 class="logo">AvisAí</h2>
+      <nav>
+        <a href="inicio.html" class="ativo">Início</a>
+        <a href="atividades.html">Atividades</a>
+        <a href="materias.html">Matérias</a>
+        <a href="calendario.html">Calendário</a>
+        <a href="configuracoes.html">Configurações</a>
+      </nav>
+      <button id="btn-sair" class="btn-sair">Sair</button>
+    </aside>
+
+    <main class="conteudo">
+      <h1 id="saudacao">Olá!</h1>
+      <p class="sub">Aqui está um resumo das suas atividades.</p>
+
+      <section class="cards">
+        <div class="card"><span id="total-pendentes">0</span> Pendentes</div>
+        <div class="card"><span id="total-concluidas">0</span> Concluídas</div>
+      </section>
+    </main>
+  </div>
+  <script src="js/inicio.js"></script>
+</body>
+</html>
